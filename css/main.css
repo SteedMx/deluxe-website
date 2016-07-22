@@ -1,8 +1,30 @@
 #splash {
   height: 100vh;
+  width:100.2vw;
   background-image: url('/images/splash.png');
   background-position:center;
   background-size:cover;
+  margin-left:-1.1vw;
+}
+
+#how-it-works {
+  background-color:#F0F0F7;
+  width:100.2vw;
+  height:100vh;
+  margin-left:-1.1vw;
+  margin-top:-2vh;
+}
+
+#how-it-works .step {
+  background:none;
+  border:none;
+  font-size:2em;
+}
+
+#how-it-works .step img {
+  margin-bottom:1em;
+  max-height:30vh;
+  min-height:30vh;
 }
 
 #iphone {
@@ -21,4 +43,28 @@
 .download:hover {
   background-color:#7F3F98;
   border-color:#7F3F98;
+}
+
+.row {
+  margin:0;
+}
+
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    margin-left:5vw;
+    margin-right:5vw;
+    display:block;
+}
+hr:after {
+    content: "¿Cómo funciona?";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
