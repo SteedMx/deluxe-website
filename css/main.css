@@ -55,6 +55,45 @@
   font-size: 0.7em;
 }
 
+#prices {
+  background-image: url('/images/prices.png');
+  width:100.2vw;
+  height:100vh;
+  margin-left:-1.1vw;
+  margin-top:-2vh;
+}
+
+#prices .step {
+  background:none;
+  border-color:white;
+  border-width:3px;
+  font-size:2em;
+  color:white;
+}
+
+#prices .step .concept {
+  margin-bottom:-10px;
+}
+
+#prices .step .from {
+  font-size:0.6em;
+}
+
+#prices .step .symbol {
+  font-size:0.6em;
+  vertical-align: super;
+}
+
+#prices .step .amount {
+  font-size:2em;
+}
+
+#prices #description {
+  color:white;
+  font-size:1em;
+  text-align:center;
+}
+
 #iphone {
   max-width:55vw;
   max-height:70vh;
@@ -94,6 +133,10 @@ hr {
 
 #services hr:after {
   content: "Servicios";
+}
+
+#prices hr:after {
+  content: "Precios";
 }
 
 hr:after {
