@@ -1,0 +1,24 @@
+#splash {
+  height: 100vh;
+  background-image: url('/images/splash.png');
+  background-position:center;
+  background-size:cover;
+}
+
+#iphone {
+  max-width:55vw;
+  max-height:70vh;
+  display:block;
+}
+
+.download {
+  background:none;
+  border-color:white;
+  border-style:solid;
+  border-width:2px;
+}
+
+.download:hover {
+  background-color:#7F3F98;
+  border-color:#7F3F98;
+}
