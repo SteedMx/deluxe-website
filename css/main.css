@@ -18,7 +18,7 @@
 #how-it-works .step {
   background:none;
   border:none;
-  font-size:2em;
+  font-size:1.5em;
 }
 
 #how-it-works .step img {
@@ -73,10 +73,15 @@
 
 #prices .step .concept {
   margin-bottom:-10px;
+  font-family:Lato;
+  font-weight:300;
 }
 
 #prices .step .from {
   font-size:0.6em;
+  font-family:Lato;
+  font-weight: 300;
+  margin-bottom:-20px; /* So the price looks closer to this textline */
 }
 
 #prices .step .symbol {
@@ -85,7 +90,8 @@
 }
 
 #prices .step .amount {
-  font-size:2em;
+  font-size:3em;
+  font-family:Cookie;
 }
 
 #prices #description {
@@ -105,6 +111,8 @@
   border-color:white;
   border-style:solid;
   border-width:2px;
+  font-family: Lato;
+  font-weight:300;
 }
 
 .download:hover {
@@ -117,14 +125,15 @@
 }
 
 hr {
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
-    margin-left:5vw;
-    margin-right:5vw;
-    display:block;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  margin-left:5vw;
+  margin-right:5vw;
+  display:block;
+  font-family: Cookie;
 }
 
 #how-it-works hr:after {
@@ -137,13 +146,21 @@ hr {
 
 #prices hr:after {
   content: "Precios";
+  /* Because here the background is a pattern */
+  color: white;
+  background: none;
 }
 
 hr:after {
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 5em;
+  padding: 0 0.25em;
+  background: #F0F0F7;
+}
+
+p {
+  font-family: Lato;
+  font-weight: 300;
 }
