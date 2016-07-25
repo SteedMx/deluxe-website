@@ -83,6 +83,26 @@
   margin-top:-2vh;
 }
 
+@media screen
+  and (min-width:320px)
+  and (max-width:650px) {
+    #how-it-works hr:after {
+      font-size:2.75em;
+    }
+
+    #how-it-works {
+      height:170vh;
+    }
+
+    #services {
+      height:260vh;
+    }
+
+    #prices {
+      height:160vh;
+    }
+  }
+
 #prices .step {
   background:none;
   border-color:white;
