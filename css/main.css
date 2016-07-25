@@ -15,6 +15,26 @@
   margin-top:-2vh;
 }
 
+@media screen
+   and (min-width:768px)
+   and (max-width:1440px) {
+  #splash {
+   height:110vh;
+  }
+}
+
+@media screen
+  and (min-width:320px)
+  and (max-width:420px) {
+    #splash {
+      background-position:28em;
+    }
+
+    #iphone {
+      margin-bottom:4em;
+    }
+  }
+
 #how-it-works .step {
   background:none;
   border:none;
@@ -69,17 +89,23 @@
   border-width:3px;
   font-size:2em;
   color:white;
+  /* Make box smaller */
+  height: 6.5em;
+  width:7em;
+  /* And center it */
+  margin-left:auto;
+  margin-right:auto;
 }
 
 #prices .step .concept {
   margin-bottom:-10px;
-  font-family:Lato;
+  font-family:Lato, sans-serif;
   font-weight:300;
 }
 
 #prices .step .from {
   font-size:0.6em;
-  font-family:Lato;
+  font-family:Lato, sans-serif;
   font-weight: 300;
   margin-bottom:-20px; /* So the price looks closer to this textline */
 }
@@ -91,7 +117,7 @@
 
 #prices .step .amount {
   font-size:3em;
-  font-family:Cookie;
+  font-family:Cookie, cursive;
 }
 
 #prices #description {
@@ -101,7 +127,7 @@
 }
 
 #iphone {
-  max-width:55vw;
+  max-width:90vw;
   max-height:70vh;
   display:block;
 }
@@ -111,7 +137,7 @@
   border-color:white;
   border-style:solid;
   border-width:2px;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-weight:300;
 }
 
@@ -133,7 +159,8 @@ hr {
   margin-left:5vw;
   margin-right:5vw;
   display:block;
-  font-family: Cookie;
+  font-family: Cookie, cursive;
+  border-color:#7F3F98;
 }
 
 #how-it-works hr:after {
@@ -161,6 +188,6 @@ hr:after {
 }
 
 p {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-weight: 300;
 }
