@@ -1,104 +1,148 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deluxe</title>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deluxe</title>
 
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <div class="row">
-      <!-- SPLASH -->
-      <div class="large-12 columns">
-        <div class="primary callout" id="splash">
-          <center>
-            <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            <img src="/images/iphone.png" id="iphone" />
-            <a href="#" class="download button">descarga el app</a></p>
-          </center>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="top-bar-container" data-sticky-container>
+    <div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+        <!-- Small Navigation -->
+        <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="large">
+            <!--
+            <a class="logo-small show-for-small-only" href="#"><img src="/images/logo.png" /></a>
+            -->
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title text-left">Menu</div>
         </div>
-      </div>
-      <!-- CÓMO FUNCIONA -->
-      <div class="large-12 columns">
-        <div class="primary callout" id="how-it-works">
-          <br><hr><br>
-          <!-- STEP 1 -->
-          <div class="large-4 medium-4 columns">
-            <div class="primary callout step">
-              <center>
-                <img src="/images/download.png" alt="" />
-                <p>Descarga el app</p>
-              </center>
+        <!-- Medium-Up Navigation -->
+        <nav class="top-bar" id="nav-menu">
+            <div class="logo-wrapper show-for-large-up">
+                <div class="logo">
+                    <img src="/images/logo.png">
+                </div>
             </div>
-          </div>
-          <!-- STEP 2 -->
-          <div class="large-4 medium-4 columns">
-            <div class="primary callout step">
-              <center>
-                <img src="/images/scissors.png" alt="" />
-                <p>Escoge tu servicio</p>
-              </center>
+
+            <!-- Left Nav Section -->
+            <div class="top-bar-left">
+                <ul class="text-center vertical large-horizontal menu">
+                    <li><a href="#">¿Cómo funciona?</a></li>
+                    <li><a href="#">Estilos</a></li>
+                </ul>
             </div>
-          </div>
-          <!-- STEP 3 -->
-          <div class="large-4 medium-4 columns">
-            <div class="primary callout step">
-              <center>
-                <img src="/images/location.png" alt="" />
-                <p>Elige tu ubicación</p>
-              </center>
+
+            <!-- Right Nav Section -->
+            <div class="top-bar-right">
+                <ul class="text-center vertical large-horizontal menu">
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Precios</a></li>
+                </ul>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- SERVICIOS -->
-      <div class="large-12 columns">
-        <div class="primary callout" id="services">
-          <br><hr><br>
-          <!-- STEP 1 -->
-          <div class="large-4 medium-4 columns">
-            <div class="primary callout step">
-              <center>
-                <img src="/images/makeup.png" alt="" />
-                <p class="title">Maquillaje</p>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore.
-                </p>
-              </center>
-            </div>
-          </div>
-          <!-- STEP 2 -->
-          <div class="large-4 medium-4 columns">
-            <div class="primary callout step">
-              <center>
-                <img src="/images/nails.png" alt="" />
-                <p class="title">Uñas</p>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore.
-                </p>
-              </center>
-            </div>
-          </div>
-          <!-- STEP 3 -->
-          <div class="large-4 medium-4 columns">
-            <div class="primary callout step">
-              <center>
-                <img src="/images/haircut.png" alt="" />
-                <p class="title">Cortes y peinados</p>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore.
-                </p>
-              </center>
-            </div>
-          </div>
-        </div>
-      </div>
+
+        </nav>
     </div>
-  </body>
+</div>
+<div class="row splash">
+    <!-- SPLASH -->
+    <div class="large-12 columns">
+        <div class="primary callout" id="splash">
+            <center>
+                <!--
+                <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
+                -->
+                <img src="/images/iphone.png" id="iphone" />
+                <div id="startchange"></div>
+                <a href="#" class="download button">descarga el app</a></p>
+            </center>
+        </div>
+    </div>
+    <!-- CÓMO FUNCIONA -->
+    <div class="large-12 columns">
+        <div class="primary callout" id="how-it-works">
+            <br><hr><br>
+            <!-- STEP 1 -->
+            <div class="large-4 medium-4 columns">
+                <div class="primary callout step">
+                    <center>
+                        <img src="/images/download.png" alt="" />
+                        <p>Descarga el app</p>
+                    </center>
+                </div>
+            </div>
+            <!-- STEP 2 -->
+            <div class="large-4 medium-4 columns">
+                <div class="primary callout step">
+                    <center>
+                        <img src="/images/scissors.png" alt="" />
+                        <p>Escoge tu servicio</p>
+                    </center>
+                </div>
+            </div>
+            <!-- STEP 3 -->
+            <div class="large-4 medium-4 columns">
+                <div class="primary callout step">
+                    <center>
+                        <img src="/images/location.png" alt="" />
+                        <p>Elige tu ubicación</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICIOS -->
+    <div class="large-12 columns">
+        <div class="primary callout" id="services">
+            <br><hr><br>
+            <!-- STEP 1 -->
+            <div class="large-4 medium-4 columns">
+                <div class="primary callout step">
+                    <center>
+                        <img src="/images/makeup.png" alt="" />
+                        <p class="title">Maquillaje</p>
+                        <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                    </center>
+                </div>
+            </div>
+            <!-- STEP 2 -->
+            <div class="large-4 medium-4 columns">
+                <div class="primary callout step">
+                    <center>
+                        <img src="/images/nails.png" alt="" />
+                        <p class="title">Uñas</p>
+                        <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                    </center>
+                </div>
+            </div>
+            <!-- STEP 3 -->
+            <div class="large-4 medium-4 columns">
+                <div class="primary callout step">
+                    <center>
+                        <img src="/images/haircut.png" alt="" />
+                        <p class="title">Cortes y peinados</p>
+                        <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>

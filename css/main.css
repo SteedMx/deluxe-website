@@ -1,80 +1,126 @@
+/*
+ * Navbar
+ */
+/* Small Navigation */
+.logo-small {
+    float: right;
+}
+.title-bar {
+    padding: 0 .5rem;
+    height: 50px;
+    background-color: rgba(55, 42, 69, 0.9);
+}
+.menu-icon, .title-bar-title {
+    position: relative;
+    top: 10px;
+}
+
+/* Medium-Up Navigation */
+@media only screen and (min-width: 40rem) {
+    .logo-wrapper {
+        position: relative;
+    }
+    .logo-wrapper .logo {
+        width: 180px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        top: -6px;
+        margin-left: -80px; 
+    }
+    .top-bar-right {
+        width: 50%;
+        padding-left: 86px; 
+    }
+    .top-bar-right ul {
+        float: left; 
+    }
+    .top-bar-left {
+        width: 50%;
+        padding-right: 86px; 
+    }
+    .top-bar-left ul {
+        float: right; 
+    }
+} /* End Navbar */
+
 #splash {
-  height: 100vh;
-  width:100.2vw;
-  background-image: url('/images/splash.png');
-  background-position:center;
-  background-size:cover;
-  margin-left:-1.1vw;
+    height: 100vh;
+    width:100.2vw;
+    background-image: url('/images/splash.png');
+    background-position:center;
+    background-size:cover;
+    margin-left:-1.1vw;
 }
 
 #how-it-works {
-  background-color:#F0F0F7;
-  width:100.2vw;
-  height:100vh;
-  margin-left:-1.1vw;
-  margin-top:-2vh;
+    background-color:#F0F0F7;
+    width:100.2vw;
+    height:100vh;
+    margin-left:-1.1vw;
+    margin-top:-2vh;
 }
 
 #how-it-works .step {
-  background:none;
-  border:none;
-  font-size:2em;
+    background:none;
+    border:none;
+    font-size:2em;
 }
 
 #how-it-works .step img {
-  margin-bottom:1em;
-  max-height:30vh;
-  min-height:30vh;
+    margin-bottom:1em;
+    max-height:30vh;
+    min-height:30vh;
 }
 
 #services {
-  background-color:#F0F0F7;
-  width:100.2vw;
-  height:100vh;
-  margin-left:-1.1vw;
-  margin-top:-2vh;
+    background-color:#F0F0F7;
+    width:100.2vw;
+    height:100vh;
+    margin-left:-1.1vw;
+    margin-top:-2vh;
 }
 
 #services .step {
-  background:none;
-  border:none;
-  font-size:2em;
+    background:none;
+    border:none;
+    font-size:2em;
 }
 
 #services .step img {
-  margin-bottom:1em;
-  max-height:30vh;
-  min-height:30vh;
+    margin-bottom:1em;
+    max-height:30vh;
+    min-height:30vh;
 }
 
 #services .title {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 #services .description {
-  font-size: 0.7em;
+    font-size: 0.7em;
 }
 
 #iphone {
-  max-width:55vw;
-  max-height:70vh;
-  display:block;
+    max-width:55vw;
+    max-height:70vh;
+    display:block;
 }
 
 .download {
-  background:none;
-  border-color:white;
-  border-style:solid;
-  border-width:2px;
+    background:none;
+    border-color:white;
+    border-style:solid;
+    border-width:2px;
 }
 
 .download:hover {
-  background-color:#7F3F98;
-  border-color:#7F3F98;
+    background-color:#7F3F98;
+    border-color:#7F3F98;
 }
 
 .row {
-  margin:0;
+    margin:0;
 }
 
 hr {
@@ -89,11 +135,11 @@ hr {
 }
 
 #how-it-works hr:after {
-  content: "¿Cómo funciona?";
+    content: "¿Cómo funciona?";
 }
 
 #services hr:after {
-  content: "Servicios";
+    content: "Servicios";
 }
 
 hr:after {
@@ -103,4 +149,56 @@ hr:after {
     font-size: 1.5em;
     padding: 0 0.25em;
     background: white;
+}
+
+.sticky {
+    width: 100%;
+}
+
+.splash {
+    margin-top: -94px;
+}
+
+.splash img {
+    margin-top: 40px;
+}
+
+.top-bar-container {
+    z-index: 1;
+}
+
+@media screen and (min-width: 1020px) {
+    .top-bar {
+        background-color: transparent;
+    }
+
+    .top-bar img {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1019px) {
+    .top-bar {
+        background-color: rgba(55, 42, 69, 0.9);
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .top-bar {
+        background-color: rgba(55, 42, 69, 0.9);
+    }
+
+    .top-bar img {
+        max-width: 30%;
+    }
+}
+
+.top-bar ul {
+    background-color: transparent;
+}
+
+.top-bar a {
+    text-transform: uppercase;
+    color: #FFF;
+    margin: 20px 40px 20px 40px;
 }
