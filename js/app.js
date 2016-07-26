@@ -1,6 +1,7 @@
 $(document).foundation();
 
 $(document).ready(function(){       
+
     var scroll_start = 0;
     var startchange = $('#startchange');
     var offset = startchange.offset();
@@ -25,8 +26,19 @@ $(document).ready(function(){
     }
     if ($(window).width() <= 640){
         $('.top-bar ul').removeClass('text-center');
-        
+
     } else {
         $('.top-bar ul').addClass('text-center');   
     }
+
+    var $root = $('html, body');
+    $('a').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top - 60
+        }, 1500, function () {
+            window.location.hash = href;
+        });
+        return false;
+    });
 });
