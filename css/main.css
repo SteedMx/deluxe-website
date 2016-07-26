@@ -103,6 +103,17 @@
     }
   }
 
+@media screen
+  and (min-width:650px) {
+    #how-it-works {
+      height:70vh;
+    }
+
+    #prices {
+      height:80vh;
+    }
+  }
+
 #prices .step {
   background:none;
   border-color:white;
