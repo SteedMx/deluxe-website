@@ -103,6 +103,17 @@
     }
   }
 
+@media screen
+  and (min-width:650px) {
+    #how-it-works {
+      height:70vh;
+    }
+
+    #prices {
+      height:80vh;
+    }
+  }
+
 #prices .step {
   background:none;
   border-color:white;
@@ -116,6 +127,23 @@
   margin-left:auto;
   margin-right:auto;
 }
+
+@media screen
+  and (min-width:650px)
+  and (max-width:815px) {
+    #services {
+      height:120vh;
+    }
+  }
+
+@media screen
+  and (min-width:650px)
+  and (max-width:910px) {
+    #prices .step {
+      border:none;
+      margin-left:-1em;
+    }
+  }
 
 #prices .step .concept {
   margin-bottom:-10px;
