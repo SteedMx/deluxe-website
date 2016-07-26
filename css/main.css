@@ -128,6 +128,23 @@
   margin-right:auto;
 }
 
+@media screen
+  and (min-width:650px)
+  and (max-width:815px) {
+    #services {
+      height:120vh;
+    }
+  }
+
+@media screen
+  and (min-width:650px)
+  and (max-width:910px) {
+    #prices .step {
+      border:none;
+      margin-left:-1em;
+    }
+  }
+
 #prices .step .concept {
   margin-bottom:-10px;
   font-family:Lato, sans-serif;
