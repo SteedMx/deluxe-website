@@ -1,4 +1,13 @@
-.DS_Store
+# modules and dependencies
 bower_components
 node_modules
-npm-debug.log
+
+# log files
+log
+*.log
+
+# mac bullshit
+.DS_Store
+
+# bundled files
+build
