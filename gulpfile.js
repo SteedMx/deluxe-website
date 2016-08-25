@@ -49,3 +49,6 @@ gulp.task('html', function () {
 });
 
 gulp.task('default', ['server', 'javascript', 'images', 'css', 'html', 'watch']);
+
+gulp.task('build', ['javascript', 'images', 'css', 'html']);
+
