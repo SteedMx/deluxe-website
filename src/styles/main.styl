@@ -1,3 +1,5 @@
+$primary-purple = #523D7B
+
 body
   font-family 'Lato'
   font-size 16px
@@ -36,7 +38,7 @@ body
 
       &:hover
         background-color white
-        color #523D7B
+        color $primary-purple
 
   &-navigation
     align-content center
@@ -68,3 +70,58 @@ body
 
       &:hover
         border-bottom 2px solid white
+
+  &-hiw
+    background-color #F3F3F9
+    display block
+    margin 0 auto
+    padding 2rem 0
+
+    &__container
+      display block
+      margin 0 auto
+      padding 0
+      width 1200px
+
+    &__header
+      align-content center
+      align-items center
+      display flex
+      justify-content space-between
+
+    &__separator
+      background-color $primary-purple
+      display block
+      height 2px
+      width 38%
+
+    &__title
+      color rgb(40, 40, 40)
+      font-family 'Cookie'
+      font-size 3rem
+      font-weight normal
+      margin 0
+      text-align center
+
+    &__steps
+      display flex
+      justify-content space-around
+      margin 3rem auto 0 auto
+      padding 0
+
+    &__step
+      display inline-block
+      margin 0
+      padding 0
+
+      &Image
+        display block
+        height 175px
+        margin 0 auto
+        text-align center
+
+      &Description
+        color rgb(40, 40, 40)
+        font-size 1.5rem
+        margin 1rem auto
+        text-align center
