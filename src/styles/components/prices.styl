@@ -1,0 +1,97 @@
+.prices
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font: normal 1.5px/normal Arial, Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: -webkit-radial-gradient(circle, rgb(35,29,24) 25%, rgba(0,0,0,0) 25%), -webkit-radial-gradient(circle, rgb(63,57,50) 25%, rgba(0,0,0,0) 25%), -webkit-radial-gradient(circle, rgb(35,29,24) 25%, rgba(0,0,0,0) 25%), -webkit-radial-gradient(circle, rgb(63,57,50) 25%, rgba(0,0,0,0) 25%), #523D7B;
+  background: -moz-radial-gradient(circle, rgb(35,29,24) 25%, rgba(0,0,0,0) 25%), -moz-radial-gradient(circle, rgb(63,57,50) 25%, rgba(0,0,0,0) 25%), -moz-radial-gradient(circle, rgb(35,29,24) 25%, rgba(0,0,0,0) 25%), -moz-radial-gradient(circle, rgb(63,57,50) 25%, rgba(0,0,0,0) 25%), #523D7B;
+  background: radial-gradient(circle, rgb(35,29,24) 25%, rgba(0,0,0,0) 25%), radial-gradient(circle, rgb(63,57,50) 25%, rgba(0,0,0,0) 25%), radial-gradient(circle, rgb(35,29,24) 25%, rgba(0,0,0,0) 25%), radial-gradient(circle, rgb(63,57,50) 25%, rgba(0,0,0,0) 25%), #523D7B;
+  background-position: 3em 3em, 3em 4em, auto auto, 0 1em;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 6em 6em;
+  background-size: 6em 6em;
+  padding 2rem 0
+
+  &__container
+    margin 0 auto
+    padding 0
+    width 1200px
+
+  &__header
+    align-content center
+    align-items center
+    display flex
+    justify-content space-between
+
+  &__separator
+    background-color white
+    display block
+    height 2px
+    width 38%
+
+  &__title
+    color white
+    font-family 'Cookie'
+    font-size 3rem
+    font-weight normal
+    margin 0
+    text-align center
+
+  &__list
+    display flex
+    list-style none
+    justify-content space-around
+    margin 2rem auto 0 auto
+    padding 0
+
+  &__element
+    border 4px solid white
+    display inline-block
+    font-size 1rem
+    height 175px
+    text-align center
+    width 175px
+
+  &__concept
+    display block
+    font-size 1.5rem
+    margin-top 35px
+
+  &__quantity
+    display block
+    font-family 'Cookie'
+    font-size 4rem
+    margin 0.75rem auto 0 auto
+    text-align center
+
+  @media all and (max-width 500px)
+    display block
+
+    &__container
+      margin 0 auto
+      padding 0
+      width 100%
+
+    &__title
+      font-size 2.5rem
+      margin 0 auto
+      text-align center
+
+    &__separator
+      display none
+
+    &__element
+      display block
+      margin 1rem auto
+
+    &__list
+      display block
