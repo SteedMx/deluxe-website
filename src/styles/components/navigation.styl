@@ -52,3 +52,29 @@
       height 0
       margin 0
       padding 0
+
+  @media all and (min-width 501px) and (max-width 1200px)
+    display block
+    text-align center
+    margin 0 auto
+    padding 0
+    width 100%
+
+    &__image
+      height 50px
+      width auto
+
+    &__link
+      margin 0 !important
+
+  @media all and (min-width 501px) and (max-width 1200px)
+    align-content center
+    align-items center
+    display flex
+
+    &__link
+      display block
+
+    &__link:nth-child(4)
+    &__link:last-child
+      margin-left 1.1rem !important
