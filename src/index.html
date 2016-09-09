@@ -10,13 +10,33 @@
 <body>
   <header class="hero">
     <nav class="navigation">
-      <a class="navigation__link" href="#como-funciona">¿Cómo funciona?</a>
+      <a class="navigation__link" href="#hiw">¿Cómo funciona?</a>
       <a class="navigation__link" href="#">Estilos</a>
       <a class="navigation__link" href="#">
         <img class="navigation__image" src="images/logo.png">
       </a>
       <a class="navigation__link" href="#services">Servicios</a>
       <a class="navigation__link" href="#prices">Precios</a>
+
+      <div class='navigation__bar' data-active='false'>
+      	<div class='navigation__hamburger'>
+          <div class='navigation__hamburgerBar'></div>
+          <div class='navigation__hamburgerBar'></div>
+          <div class='navigation__hamburgerBar'></div>
+        </div>
+      </div>
+
+      <ul class='navigation__mobile' data-active='false'>
+        <li class='navigation__mobileItem'>
+          <a class='navigation__mobileLink' href='#hiw'>Como funciona</a></li>
+        <li class='navigation__mobileItem'>
+          <a class='navigation__mobileLink'>Estilos</a></li>
+        <li class='navigation__mobileItem'>
+          <a class='navigation__mobileLink' href='#services'>Servicios</a></li>
+        <li class='navigation__mobileItem'>
+          <a class='navigation__mobileLink' href='#prices'>Precios</a>
+        </li>
+      </ul>
     </nav>
 
     <img class="hero__iphone" src="images/iphone.png" />
@@ -25,7 +45,7 @@
     </div>
   </header>
 
-  <section class="hiw" id="como-funciona">
+  <section class="hiw" id="hiw">
     <div class="hiw__container">
       <header class="hiw__header">
         <div class="hiw__separator"></div>

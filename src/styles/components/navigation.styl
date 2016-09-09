@@ -31,27 +31,64 @@
 
   @media all and (max-width 500px)
     display block
-    text-align center
+    margin 0
+    padding 0
     width 100%
 
     &__link
-      display block
-      font-size 1rem
-      margin 0.5rem auto !important
-      padding 0
-
-      &:nth-child(3)
-        font-size 0
-        height 0
-        margin 0 !important
-        padding 0
-
-    &__image
       display none
-      font-size 0
-      height 0
+
+    &__bar
+      background-color rgb(40, 40, 40)
+      display block
+      overflow hidden
+
+    &__hamburger
+      background-color rgb(40, 40, 40)
+      display inline-block
+      float right
+      padding 0.5rem
+      transition all 0.25s ease
+
+      &:hover
+        background-color rgb(60, 60, 60)
+        cursor pointer
+
+      &Bar
+        background-color white
+        height 3px
+        margin 5px
+        width 25px
+
+    &__mobile
+      background-color rgb(40, 40, 40)
+      display block
+      color white
+      list-style none
       margin 0
       padding 0
+      transition all 0.25s ease
+      
+      &[data-active='false']
+        display none
+
+      &[data-active='true']
+        display block
+
+      &Item
+        text-align center
+
+      &Link
+        color white
+        display block
+        padding 1rem 0
+        text-decoration none
+        transition all 0.25s ease
+        width 100%
+        
+        &:hover
+          background-color rgb(60, 60, 60)
+          cursor pointer
 
   @media all and (min-width 501px) and (max-width 750px)
     align-content center
@@ -75,6 +112,9 @@
     text-align center
     width 100%
 
+    &__mobile
+      display none
+
     &__image
       height 50px
       width auto
@@ -88,3 +128,7 @@
     &__link:nth-child(4)
     &__link:last-child
       margin-left 1.1rem !important
+
+  @media all and (min-width 1201px)
+    &__mobile
+      display none
